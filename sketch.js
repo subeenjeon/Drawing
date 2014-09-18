@@ -1,9 +1,9 @@
 function setup() {
 	createCanvas(2500, 2500);
-	background(246, 225, 235);
+	background(194, 216, 233);
 	noFill();
 
-	stroke(156, 215, 161);
+	stroke(233, 158, 96);
 	line(940, 660, 960, 660);
 	line(940, 670, 960, 670);
 	line(940, 680, 950, 680);
@@ -157,7 +157,7 @@ function setup() {
 	line(930, 780, 1110, 780);
 
 
-	stroke(246, 88, 80);
+	stroke(118, 59, 10);
 	line(520, 570, 630, 570);
 	line(510, 580, 660, 580);
 	line(510, 590, 680, 590);
@@ -257,7 +257,7 @@ function setup() {
 	line(1050, 1170, 1060, 1170);
 	line(1050, 1180, 1060, 1180);
 
-	stroke(246, 229, 121);
+	stroke(64, 32, 7);
 	line(880, 470, 940, 470);
 	line(840, 480, 930, 480);
 	line(780, 490, 920, 490);
@@ -387,4 +387,23 @@ function setup() {
 	line(640, 830, 720, 830);
 	line(500, 770, 820, 770);
 	line(510, 780, 800, 780);
+
+	noFill();
+	stroke(255, 255, 255);
+	ellipse(1970, 570, 150, 150);
+	ellipse(1900, 630, 75, 75);
+}
+
+function draw() {
+  //background(246, 153, 136);
+//for (시작상태; 반복하는 조건; 증가값)
+  stroke(134, 153, 184) 	
+  for (var x = 1; x <=5; x++)
+  {
+    ellipse(x * 400 + 1300, x  * 30 + 1450, x * 450, x * 45);
+  }
+  stroke(250, 217, 20) 	
+  var size = Math.abs(mouseX - 320);
+  ellipse(120, 40, size, size);
+  ellipse(320, 240, mouseX, mouseY);
 }
